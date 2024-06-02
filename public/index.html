@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Real Time Chat</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.5/socket.io.js"
+        integrity="sha512-luMnTJZ7oEchNDZAtQhgjomP1eZefnl82ruTH/3Oj/Yu5qYtwL7+dVRccACS/Snp1lFXq188XFipHKYE75IaQQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <div class="container mx-auto bg-gray-200 w-full h-screen flex items-center justify-center" id="chat-wrap">
+        <div class="flex flex-col items-center w-[30%] shadow-xl  h-[70%] justify-evenly ">
+            <h2
+                class="text-white bg-blue-600 w-full items-center flex py-2 justify-center  border-b  font-bold text-3xl ">
+                Real Time Chat</h2>
+            <div id="chat-window" class="w-full flex-col bg-gray-100 h-full flex items-center   ">
+                <div id="output" class="w-full overflow-y-scroll h-72 px-2 flex flex-col gap-y-2">
+                  
+                    
+                </div>
+                <div id="feedback" class="w-full flex items-center justify-start"></div>
+            </div>
+            <div class="flex flex-cols w-full ">
+                <div class="flex flex-col w-full   ">
+
+                    <input class="px-2 outline-none w-full py-1 bg-transparent border-t transition-all ring-sky-100"
+                        type="text" id="sender" placeholder="Ad">
+                    <input class="px-2 outline-none w-full py-1 bg-transparent border-t  transition-all ring-sky-100"
+                        type="text" id="message" placeholder="Mesaj">
+                    <button
+                        class="  hover:bg-blue-400 border-t py-2 text-gray-100 bg-blue-600 hover:ring-0 transition-all active:scale-95"
+                        id="submitBtn" type="submit">Gönder</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="chat.js" charset="UTF-8"></script>
+</body>
+
+</html>
