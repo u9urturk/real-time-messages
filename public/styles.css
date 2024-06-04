@@ -565,17 +565,8 @@ video {
 .h-screen {
   height: 100vh;
 }
-.w-\[30\%\] {
-  width: 30%;
-}
 .w-full {
   width: 100%;
-}
-.w-auto {
-  width: auto;
-}
-.max-w-\[30\%\] {
-  max-width: 30%;
 }
 .max-w-96 {
   max-width: 24rem;
