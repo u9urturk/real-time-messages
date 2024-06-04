@@ -38,9 +38,9 @@ submitBtn.addEventListener('click', () => {
 socket.on('chat', data => {
     feedback.innerHTML = "";
     if (baseSender === data.sender) {
-        output.innerHTML += "<div class='w-1/2 h-auto flex justify-end '>" + "<p>" + data.message + "</p></div>"
+        output.innerHTML += "<div style='justify-content: flex-end;' class='w-[55%] h-auto flex '>" + "<p>" + data.message + "</p></div>"
     } else {
-        output.innerHTML += "<div class='w-1/2 h-auto flex justify-start'>" + "<p><strong>" + data.sender + ' : </strong>' + data.message + "</p></div>"
+        output.innerHTML += "<div class='w-[55%] h-auto flex justify-start'>" + "<p><strong>" + data.sender + ' : </strong>' + data.message + "</p></div>"
     }
     message.value = '';
 })

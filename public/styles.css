@@ -534,6 +534,18 @@ video {
     max-width: 1536px;
   }
 }
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.bottom-1 {
+  bottom: 0.25rem;
+}
+.left-1 {
+  left: 0.25rem;
+}
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -558,6 +570,15 @@ video {
 }
 .w-full {
   width: 100%;
+}
+.w-auto {
+  width: auto;
+}
+.max-w-\[30\%\] {
+  max-width: 30%;
+}
+.max-w-96 {
+  max-width: 24rem;
 }
 .flex-col {
   flex-direction: column;
